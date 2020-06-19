@@ -1,0 +1,125 @@
+html {
+	scroll-behavior: smooth;
+}
+
+:root {
+	--darkblue: #295195;
+	--blue: #10455b;
+	--mediumblue: #76accd;
+	--cyan: #1c768f;
+	--heavyblue: #21355a;
+	--darkgray: #182121;
+	--cream: #f9f3ed;
+	--white: #ffffff;
+}
+
+.body {
+	background-color: var(--white);
+}
+
+.error {
+	color: red;
+}
+.success {
+	color: green;
+}
+
+.red {
+	border: 2px red solid;
+}
+.blue {
+	border: 2px blue solid;
+}
+.green {
+	border: 2px green solid;
+}
+.black {
+	border: 2px black solid;
+}
+
+.highlight1 {
+	color: var(--blue);
+}
+.highlight2 {
+	color: var(--cyan);
+}
+.highlight3 {
+	color: var(--darkgray);
+}
+
+.base1 {
+	color: var(--cream);
+}
+.base2 {
+	color: var(--mediumblue);
+}
+.base3 {
+	color: var(--heavyblue);
+}
+
+.back1 {
+	background-color: var(--cream);
+}
+.back2 {
+	background-color: var(--darkblue);
+}
+.back3 {
+	background-color: var(--heavyblue);
+}
+.back4 {
+	background-color: var(--darkgray);
+}
+
+.center {
+	margin: 0 auto;
+	text-align: center;
+	justify-content: center;
+}
+
+.btn-success {
+	background-color: var(--heavyblue);
+}
+.btn-primary {
+	background-color: var(--darkblue);
+	border-color: var(--heavyblue);
+}
+
+@font-face {
+	font-family: BebasNeue;
+	src: url('fonts/BebasNeue-Regular.ttf');
+}
+.BebasNeue {
+	font-family: BebasNeue;
+}
+
+@font-face {
+	font-family: Comfortaa;
+	src: url('fonts/Comfortaa-Medium.ttf');
+}
+.Comfortaa {
+	font-family: Comfortaa;
+}
+
+@font-face {
+	font-family: Ubuntu;
+	src: url('fonts/UbuntuCondensed-Regular.ttf');
+}
+.Ubuntu {
+	font-family: Ubuntu;
+}
+
+@font-face {
+	font-family: Varela;
+	src: url('fonts/VarelaRound-Regular.ttf');
+}
+.Varela {
+	font-family: Varela;
+}
+
+@font-face {
+	font-family: Sourcesans;
+	src: url('fonts/SourceSansPro-Regular.ttf');
+}
+.Sourcesans {
+	font-family: Sourcesans;
+}

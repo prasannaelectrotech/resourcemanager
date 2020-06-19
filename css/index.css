@@ -1,0 +1,93 @@
+@import 'template.css';
+
+.heading-div {
+	height: 100%;
+	padding: 10px;
+}
+
+.brand {
+	font-size: 80px;
+}
+.brand-sub {
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+
+#product-section-switch {
+	padding: 8px;
+	color: var(--cream);
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+#details-section-switch {
+	padding: 8px;
+	color: var(--cream);
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.active {
+	box-shadow: inset 0px 0px 5px 6px var(--heavyblue);
+}
+
+@media screen and (max-width: 700px) {
+	.brand {
+		font-size: 35px;
+		padding: 5px;
+	}
+	.brand-sub {
+		font-size: 15px;
+		padding-bottom: 5px;
+	}
+	#product-section-switch {
+		width: 45vw;
+		font-size: 15px;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+	}
+	#details-section-switch {
+		font-size: 15px;
+		width: 45vw;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+}
+
+.display-section {
+	margin: 16px;
+	border-radius: 10px;
+	padding: 15px 5px 15px 5px;
+}
+
+.white-box {
+	background-color: var(--white);
+	padding: 10px;
+	border-radius: 10px;
+	margin-top: 10px;
+}
+
+.table-elem {
+	border-left: 1px solid var(--darkgray);
+	border-right: 1px solid var(--darkgray);
+	text-align: center;
+	word-wrap: break-word;
+}
+.detail-elem {
+	margin-top: 10px;
+	padding: 10px;
+}
+.modal-row {
+	margin: 10px 0px 10px 0px;
+}
+#main-modal {
+}
+#modal-header {
+}
+#modal-title {
+}
+#modal-body {
+	line-height: 40px;
+}
+#modal-footer {
+}
