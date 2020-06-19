@@ -91,7 +91,7 @@ function removeThisInput(doc) {
 
 async function addProduct() {
 	if (document.getElementById('add-pid').value == '-1') {
-		var pid = await makeAsyncGetRequest('/get-new-pid/');
+		var pid = await makeAsyncGetRequest('get-new-pid/');
 		pid = pid.result;
 		document.getElementById('add-pid').value = pid;
 	}
@@ -141,7 +141,7 @@ function productQueryObject() {
 }
 
 async function fetchProducts() {
-	response = await makeAsyncGetRequest('/get-all-products/');
+	response = await makeAsyncGetRequest('get-all-products/');
 	data = response.result;
 	productSection = document.getElementById('product-section-div');
 	text = '';
@@ -262,7 +262,7 @@ async function saveDetails() {
 		Email: document.getElementById('owner-email').value,
 		PhoneNumber: document.getElementById('owner-number').value,
 	};
-	response = await makeAsyncPostRequest('/save-details/', queryObj);
+	response = await makeAsyncPostRequest('save-details/', queryObj);
 	console.log(response.result);
 	document.getElementById('save-success').style.display = 'block';
 }
