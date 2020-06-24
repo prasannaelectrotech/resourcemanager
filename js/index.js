@@ -100,7 +100,7 @@ async function addProduct() {
 	queryObj = productQueryObject();
 	query = await makeAsyncPostRequest('add-product/', queryObj);
 	response = query.result;
-	console.log(response);
+	// console.log(response);
 
 	document.getElementById('modal-body').innerHTML =
 		'<span class="highlight2">Product ' +
@@ -223,7 +223,7 @@ function editProduct(doc, Pid) {
 	document.getElementById('addProductBtn').click();
 
 	parentDiv = doc.parentNode.parentNode;
-	console.log(parentDiv.children[0].innerHTML, Pid);
+	// console.log(parentDiv.children[0].innerHTML, Pid);
 	document.getElementById('add-pid').value = parentDiv.children[0].innerHTML;
 	document.getElementById('add-name').value = parentDiv.children[1].innerHTML;
 	document.getElementById('add-specifications').value =
@@ -231,7 +231,7 @@ function editProduct(doc, Pid) {
 
 	var imageURLs = parentDiv.children[2].getElementsByTagName('a');
 	for (var i = 0; i < imageURLs.length; i++) {
-		console.log(imageURLs[i].innerText);
+		// console.log(imageURLs[i].innerText);
 		addNewImageInput(imageURLs[i].innerHTML);
 	}
 }
@@ -241,14 +241,14 @@ async function deleteProduct(doc, Pid) {
 	queryObj = { PID: Pid };
 	query = await makeAsyncPostRequest('delete-product/', queryObj);
 	response = query.result;
-	console.log(response);
+	// console.log(response);
 	parentDiv.remove(1);
 }
 
 async function getDetails() {
 	response = await makeAsyncGetRequest('get-details/');
 	response = response.result;
-	console.log(response);
+	// console.log(response);
 	document.getElementById('owner-name').value = response['Name'];
 	document.getElementById('owner-address').value = response['Address'];
 	document.getElementById('owner-email').value = response['Email'];
@@ -263,6 +263,6 @@ async function saveDetails() {
 		PhoneNumber: document.getElementById('owner-number').value,
 	};
 	response = await makeAsyncPostRequest('save-details/', queryObj);
-	console.log(response.result);
+	// console.log(response.result);
 	document.getElementById('save-success').style.display = 'block';
 }
