@@ -239,8 +239,8 @@ function editProduct(doc, Pid) {
 async function deleteProduct(doc, Pid) {
 	parentDiv = doc.parentNode.parentNode;
 	queryObj = { PID: Pid };
-	query = await makeAsyncPostRequest('delete-product/', queryObj);
-	response = query.result;
+	// query = await makeAsyncPostRequest('delete-product/', queryObj);
+	// response = query.result;
 	// console.log(response);
 	parentDiv.remove(1);
 }
